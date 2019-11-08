@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <a href="#">Main Blog Page </a>
+    <a href="#">Add a Blog Entry</a>
+    
+    <h1>{{heading}}</h1>
+
+    <form method="post">
+    	<label>Title for your new blog:
+    		<input type="text" name="blog-title">
+    	</label>
+    	<br>
+    	<br>
+    	<label>Your new blog:
+    		<br>
+    		<textarea name="blog-content" cols="45" rows="10"></textarea>
+    	</label>
+			<br>
+			<br>
+    	<input type="submit" value="Add Entry">
+    </form>
+    
+
+{% endblock %}
