@@ -16,9 +16,10 @@ class Blog(db.Model):
         self.title = title
         self.body = body
 
+
 @app.route("/")
 def index():
-	return rediret('/blog')
+	return redirect('/blog')
 
 
 if __name__ == '__main__':
