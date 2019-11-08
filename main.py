@@ -21,6 +21,10 @@ class Blog(db.Model):
 def index():
 	return redirect('/blog')
 
+@app.route("/blog")
+def display_blog():
+	return render_template("blog.html")
+
 
 if __name__ == '__main__':
 	app.run()
